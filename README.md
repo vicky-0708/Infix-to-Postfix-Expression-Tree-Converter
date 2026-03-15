@@ -24,7 +24,7 @@ ATHARVA KUDALE – 1012512018
 SHALEM ARSUD – 1012512026
 
 ## Task Distribution
-VICKY GIRI – Binary tree traversal implementation
+VICKY GIRI – Binary tree traversal implementation and Documentation
 SHIVRAJ INGALE – Infix to postfix conversion using stack  
-ATHARVA KUDALE – Expression tree construction using binary tree  
-SHALEM ARSUD – Documentation and repository management
+ATHARVA KUDALE – Expression tree construction 
+SHALEM ARSUD – INPUT/OUTPUT handling and repository management
