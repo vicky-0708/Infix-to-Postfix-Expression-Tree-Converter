@@ -75,6 +75,20 @@ Used to construct the expression tree from the postfix expression.
 - Postorder Traversal
 
 ---
+## Sample Input / Output
+
+Input:
+Infix Expression: (A+B)*C
+
+Output:
+Postfix Expression: AB+C*
+
+Expression Tree Traversals
+
+Inorder: (A+B)*C  
+Preorder: * + A B C  
+Postorder: A B + C *
+---
 
 ## Team Members
 - **VICKY GIRI** – 1012411233
