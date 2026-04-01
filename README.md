@@ -85,8 +85,8 @@ Postfix Expression: AB+C*
 
 Expression Tree Traversals
 
-Inorder: (A+B)*C  
-Preorder: * + A B C  
+Inorder: A + B * C
+Preorder: * + A B C
 Postorder: A B + C *
 ---
 
