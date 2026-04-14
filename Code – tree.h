@@ -9,5 +9,6 @@ struct Node
 };
 
 struct Node* createNode(char data);
+struct Node* buildExpressionTree(char postfix[]);
 
 #endif
