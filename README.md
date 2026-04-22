@@ -1,137 +1,113 @@
 # Infix to Postfix Expression Tree Converter
 
 ## Project Description
-In mathematics, expressions are usually written in infix form such as `A + B * C`. However, computers find it easier to evaluate expressions written in postfix form.
+In mathematics, expressions are usually written in infix form like A + B * C. But computers find it easier to evaluate expressions in postfix form.
 
-In this project, we convert an infix expression into a postfix expression using a stack. After that, we construct an expression tree from the postfix expression using a binary tree.
+In this project, we convert an infix expression into postfix using a stack. After that, we build an expression tree from the postfix expression using a binary tree.
 
-This project helps us understand how data structures are used in expression processing and evaluation.
+To make the project more user-friendly, we also implemented a simple GUI using Java Swing.
+
+This project mainly helps in understanding how stack and tree data structures are used in expression processing.
 
 ---
 
 ## Problem Statement
-Mathematical expressions written in infix form are easy for humans to understand, but computers require a more structured representation for efficient processing and evaluation. This project converts an infix expression into postfix form and then builds an expression tree to represent the expression using binary tree concepts.
+Infix expressions are easy for humans to understand but not efficient for computers to process directly. So, the goal of this project is to convert infix expressions into postfix form and then represent them using an expression tree.
 
 ---
 
 ## Data Structures Used
-### 1. Stack
-Used for converting infix expressions to postfix expressions.
 
-### 2. Binary Tree
-Used to construct the expression tree from the postfix expression.
+Stack  
+Used for infix to postfix conversion  
+
+Binary Tree  
+Used for building the expression tree  
 
 ---
 
-## Expected Features
-- Accept an infix expression from the user
-- Convert the infix expression to postfix form
-- Build an expression tree from the postfix expression
-- Display tree traversals such as:
-  - Inorder
-  - Preorder
-  - Postorder
+## Features
+- Takes infix expression as input through GUI  
+- Converts infix to postfix  
+- Builds expression tree  
+- Displays:
+  - Inorder traversal  
+  - Preorder traversal  
+  - Postorder traversal  
+- Simple GUI using Java Swing  
 
 ---
 
 ## Project Modules
-- **stack.c / stack.h** → Infix to postfix conversion using stack
-- **tree.c / tree.h** → Expression tree construction
-- **traversal.c / traversal.h** → Tree traversals
-- **io.c / io.h** → Input and output handling
-- **main.c** → Integration of all modules
+- InfixToPostfix.java → Handles infix to postfix conversion  
+- ExpressionTree.java → Builds expression tree  
+- Traversal.java → Performs tree traversals  
+- Main.java → GUI and integration  
 
 ---
 
-## Core Operations
-- Input handling
-- Operator precedence checking
-- Infix to postfix conversion
-- Expression tree construction
-- Tree traversal display
+## How It Works
+1. User enters infix expression  
+2. Expression is converted to postfix  
+3. Expression tree is created  
+4. Traversals are performed  
+5. Output is displayed on GUI  
 
 ---
 
-## Algorithm Plan
+## Sample Input
+(A+B)*C
 
-### Infix to Postfix Conversion
-1. Scan the infix expression from left to right
-2. If operand, add it to postfix
-3. If operator, handle precedence using stack
-4. If parentheses appear, process accordingly
-5. Output the postfix expression
+## Sample Output
+Postfix: AB+C*  
 
-### Expression Tree Construction
-1. Read postfix expression
-2. If operand, create a node and push it into stack
-3. If operator, pop two nodes and create a new operator node
-4. Attach the popped nodes as children
-5. Push the new node back into stack
-6. Final node becomes the root of the expression tree
+Inorder: A + B * C  
+Preorder: * + A B C  
+Postorder: A B + C *  
 
-### Tree Traversals
-- Inorder Traversal
-- Preorder Traversal
-- Postorder Traversal
-
----
-## Sample Input / Output
-
-Input  
-Infix Expression: (A+B)*C
-
-Output  
-Postfix Expression: AB+C*
-
-Expression Tree Traversals
-
-```
-Inorder Traversal : A + B * C
-
-Preorder Traversal: * + A B C
-
-Postorder Traversal: A B + C *
-```
 ---
 
 ## Team Members
-- **VICKY GIRI** – 1012411233
-- **SHIVRAJ INGALE** – 1012411236
-- **ATHARVA KUDALE** – 1012512018
-- **SHALEM ARSUD** – 1012512026
+Vicky Giri – 1012411233  
+Shivraj Ingale – 1012411236  
+Atharva Kudale – 1012512018  
+Shalem Arsud – 1012512026  
 
 ---
 
 ## Task Distribution
-- **VICKY GIRI** – Binary tree traversal implementation and documentation
-- **SHIVRAJ INGALE** – Infix to postfix conversion using stack
-- **ATHARVA KUDALE** – Expression tree construction
-- **SHALEM ARSUD** – Input/Output handling and repository management
+Vicky Giri – Tree traversal algorithms (inorder, preorder, postorder) and documentation  
+
+Shivraj Ingale – Infix to postfix conversion using stack  
+
+Atharva Kudale – Expression tree construction  
+
+Shalem Arsud – Java Swing GUI and integration of all modules  
 
 ---
 
 ## Development Timeline
 
-### Week 1
-- Topic selection
-- Proposal preparation
-- Repository creation
-- Basic planning
+Week 1  
+Topic selection  
+Planning and repository setup  
 
-### Week 2
-- Code implementation
-- Testing and debugging
-- Integration of modules
+Week 2  
+Code implementation  
+Testing and debugging  
+Integration of modules  
 
-### Week 3
-- Final code cleanup
-- Demo preparation
-- Viva preparation
+Week 3  
+Final cleanup  
+Demo preparation  
+Viva preparation  
 
 ---
 
 ## Future Scope
-- Add support for multi-digit operands
-- Add expression evaluation
-- Add graphical tree visualization
-- Improve error handling for invalid expressions
+- Support multi-digit inputs  
+- Add expression evaluation  
+- Improve GUI design  
+- Better error handling  
+
+---
